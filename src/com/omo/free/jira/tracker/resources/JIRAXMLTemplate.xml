@@ -1,0 +1,29 @@
+<item>
+	<title>[@project_key@] @summary@</title>
+    <project>@project_name@</project>
+	<description>@description@</description>
+	<key>@project_key@</key>
+	<summary>@summary@</summary>
+	<type>@issue_type@</type>
+	<priority>@priority@</priority>
+	<status>@status@</status>
+	<resolution>@resolution@</resolution>
+		<assignee>@assignee@</assignee>
+	<reporter>@reporter@</reporter>
+	<labels>
+		@labels@
+	</labels>
+	<created>@creation_date@</created>
+	<updated>@update_date@</updated>
+	<comments>
+		@comment_body@
+	</comments>
+	<attachments>
+		@attachment_filenames@
+	</attachments>
+	<subtasks>
+	</subtasks>
+	<customfields>
+		@custom_fields@
+	</customfields>
+</item>

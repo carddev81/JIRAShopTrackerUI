@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC><HTML><HEAD><META content="IE=11.0000" http-equiv="X-UA-Compatible">
+     <TITLE>[@project_key@] @summary@</TITLE>
+<META http-equiv="Content-Type" content="charset=UTF-8">
+<STYLE type="text/css">
+.tableBorder, .grid {
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+.tableBorder td, .grid td {
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.noPadding {
+    padding: 0 !important;
+}
+
+h3 .subText{
+    font-size: 60%;
+    font-weight: normal;
+}
+.tabLabel{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+td.blank{
+    padding: 0;
+    margin: 0;
+}
+.blank td{
+    border: none;
+}
+#descriptionArea{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+hr{
+    border-top:1px solid #aaa;
+}
+hr.fullcontent{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff no-repeat scroll center;
+}
+</STYLE>
+
+</HEAD>
+<BODY>
+<TABLE width="100%" class="tableBorder" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="100%" valign="top" bgcolor="#f0f0f0" colspan="2"><H3 class="formtitle">[@project_key@]&nbsp;<A href="https://jira.url.goes.here/browse/@project_key@">@summary@</A><SPAN class="subText"> Created: @creation_date@ &nbsp;Updated: @update_date@</SPAN></H3></TD>
+  </TR>
+   <TR>
+    <TD width="20%"><B>Status:</B></TD>
+    <TD width="80%">@status@</TD></TR>
+  <TR>
+    <TD width="20%"><B>Project:</B></TD>
+    <TD width="80%"><A href="#">@project_name@</A></TD></TR>
+  <TR>
+    <TD><B>Component/s:</B></TD>
+    <TD>@components@</TD></TR>
+  <TR>
+    <TD><B>Fix Version/s:</B></TD>
+    <TD>@fix_versions@</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<TABLE width="100%" class="grid" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20%" valign="top" bgcolor="#f0f0f0"><B>Type:</B></TD>
+    <TD width="30%" valign="top" bgcolor="#ffffff">@issue_type@</TD>
+    <TD bgcolor="#f0f0f0"><B>Priority:</B></TD>
+    <TD nowrap="" valign="top" bgcolor="#ffffff">@priority@</TD></TR>
+  <TR>
+    <TD width="20%" valign="top" bgcolor="#f0f0f0"><B>Reporter:</B></TD>
+    <TD width="30%" valign="top" bgcolor="#ffffff"><A class="user-hover" id="word_reporter_grantc1" href="#" rel="grantc1">@reporter@</A>
+    </TD>
+    <TD width="20%" bgcolor="#f0f0f0"><B>Assignee:</B></TD>
+    <TD width="30%" nowrap="" valign="top" bgcolor="#ffffff"><A class="user-hover" href="#">@assignee@</A></TD>
+  </TR>
+  <TR>
+    <TD width="20%" bgcolor="#f0f0f0"><B>Resolution:</B></TD>
+    <TD width="30%" nowrap="" valign="top" bgcolor="#ffffff">@resolution@</TD>
+    <TD bgcolor="#ffffff" colspan="2">&nbsp;</TD></TR>
+  <TR>
+    <TD width="20%" bgcolor="#f0f0f0"><B>Labels:</B></TD>
+    <TD class="value" id="labels-441479-value" nowrap="" valign="top" bgcolor="#ffffff"  colspan="3">@labels@</TD></TR>
+  <TR>
+    <TD width="20%" bgcolor="#f0f0f0"><B>Remaining Estimate:</B></TD>
+    <TD width="80%" nowrap="" valign="top" bgcolor="#ffffff" colspan="3">@timetracking_remaining_estimate@</TD></TR>
+  <TR>
+    <TD width="20%" bgcolor="#f0f0f0"><B>Time Spent:</B></TD>
+    <TD width="80%" nowrap="" valign="top" bgcolor="#ffffff" colspan="3">@timetracking_time_spent@</TD></TR>
+  <TR>
+    <TD width="20%" bgcolor="#f0f0f0"><B>Original Estimate:</B></TD>
+    <TD width="80%" nowrap="" valign="top" bgcolor="#ffffff" colspan="3">@timetracking_original_estimate@</TD></TR>
+  </TBODY>
+</TABLE>
+
+<BR>
+
+<TABLE width="100%" class="grid" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="20%" valign="top" bgcolor="#f0f0f0"><B>Issue Links:</B></TD>
+    <TD class="noPadding" valign="top" bgcolor="#ffffff">
+      <TABLE width="100%" class="blank" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+			@issue_links@
+        </TBODY>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD width="20%" valign="top" bgcolor="#f0f0f0"><B>Attachments:</B></TD>
+    <TD valign="top" bgcolor="#ffffff">@attachment_filenames@</TD></TR>
+  @custom_fields@
+  </TBODY>
+</TABLE>
+<BR>
+<TABLE width="100%" align="center" border="0" cellspacing="0" cellpadding="2">
+  <TBODY>
+  <TR>
+    <TD width="1%" align="center" nowrap="" bgcolor="#bbbbbb">&nbsp;<FONT color="#ffffff"><B>Description</B></FONT>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD id="descriptionArea">@description@</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<TABLE width="100%" align="center" border="0" cellspacing="0" cellpadding="2">
+  <TBODY>
+  <TR>
+    <TD width="1%" align="center" nowrap="" bgcolor="#bbbbbb">&nbsp;<FONT color="#ffffff"><B>Comments</B></FONT>&nbsp;</TD>
+    <TD>&nbsp;</TD></TR></TBODY>
+</TABLE>
+<TABLE width="100%" class="grid" style="margin: 0px;" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+	@comment_body@
+</TBODY>
+</TABLE>
+Generated at @current_timestamp@ by @user_from_path_env@ using @app_name@.
+</BODY>
+</HTML>

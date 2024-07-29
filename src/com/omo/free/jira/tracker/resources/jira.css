@@ -1,0 +1,18 @@
+* {
+    -fx-primary : rgb(74, 198, 198);
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : white;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-font-size: 9pt;
+}
+
+#jira-blue {
+	-fx-fill: rgb(74, 198, 198);
+}
+#jira-purple {
+	-fx-fill: rgb(137, 94, 204);
+}
+#jira-darkblue {
+	-fx-fill: rgb(15, 138, 186);
+}
